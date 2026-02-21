@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- #region header -->
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -53,13 +53,102 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="nav-list-mobile">
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile current" href="#">Studio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item-mobile">
+                <a class="nav-link-mobile" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts-mobile">
+            <ul class="contacts-list-mobile">
+              <li>
+                <a class="contacts-link-mobile current" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-item-mobile">
+                <a class="contacts-link-mobile" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="social-links-mobile">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-icon-mobile"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="icon-mobile">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com"
+                  class="social-icon-mobile"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="icon-mobile">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-icon-mobile"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="icon-mobile">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="social-icon-mobile"
+                  target="_blank"
+                >
+                  <svg width="16" height="16" class="icon-mobile">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
 
     <main>
       <!-- #region hero-->
-      <section class="hero-section">
+      <section class="hero-section hidden">
         <div class="container container-hero">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
@@ -368,7 +457,7 @@
       </section>
       <!-- #endregion team -->
       <!-- #region portfolio -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -493,7 +582,7 @@
     </main>
     <!-- #region footer -->
 
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container">
         <div class="logo-item-footer">
           <a class="logo footer-logo" href="./index.html"
@@ -580,7 +669,7 @@
 
     <!-- #endregion footer-->
     <!-- #region popup -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="form-close-icon" width="8" height="8">
@@ -675,6 +764,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <!-- #endregion popup -->
   </body>
 </html>
