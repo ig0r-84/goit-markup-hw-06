@@ -383,6 +383,7 @@ button {
 @media screen and (min-width: 768px) {
   .hero-section {
     padding: 112px 0;
+    max-width: 768px;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
@@ -846,12 +847,13 @@ button {
 }
 @media screen and (min-width: 768px) {
   .page-footer .container {
-    max-width: 600px;
+    max-width: 768px;
     justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
     text-align: left;
+    padding-left: 108px;
   }
   .input-row {
     flex-direction: row;
@@ -878,6 +880,9 @@ button {
   }
   .link-item-footer {
     margin-right: 80px;
+  }
+  .mail-form {
+    margin-left: auto;
   }
 }
 /* #endregion footer*/
