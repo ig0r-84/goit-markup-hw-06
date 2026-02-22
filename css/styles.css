@@ -298,7 +298,6 @@ button {
 .social-links-mobile {
   display: flex;
   gap: 40px;
-  margin-top: 8px;
 }
 .social-icon-mobile {
   width: 40px;
@@ -413,6 +412,7 @@ button {
 
   .main-title {
     margin-bottom: 58px;
+    font-size: 56px;
   }
 }
 /* #endregion Hero*/
