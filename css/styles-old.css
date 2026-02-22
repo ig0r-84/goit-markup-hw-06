@@ -406,6 +406,7 @@
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   opacity: 0;
+  z-index: 99999;
   visibility: hidden;
   pointer-events: none;
   transition:
@@ -432,7 +433,7 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modal {
